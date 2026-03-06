@@ -1,19 +1,159 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="711 Clean - Professional Cleaning Services in Kuwait">
+    <!-- Header -->
+    <header class="bg-dark text-white">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl font-bold text-primary">711</span>
+                <span class="text-2xl font-semibold">Clean</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span class="text-sm sm:text-base">Kuwait</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-dark via-slate-800 to-dark text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-6xl mx-auto px-6 py-20 sm:py-28 lg:py-36 text-center">
+            <div class="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Proudly Serving Kuwait
+            </div>
+            <h1 class="text-white mb-6">Professional Cleaning Services</h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+                Trusted cleaning solutions for homes and businesses across Kuwait. Quality service you can rely on.
+            </p>
+
+            <!-- Big Phone CTA -->
+            <a href="tel:+96592235280" class="group inline-flex flex-col items-center gap-4 no-underline">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-accent rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity animate-pulse"></div>
+                    <div class="relative bg-accent hover:bg-emerald-400 transition-colors rounded-full p-8 sm:p-10 shadow-2xl shadow-accent/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 sm:w-20 sm:h-20 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="text-sm text-gray-400 mb-1">Call Us Now</div>
+                    <div class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-wide text-white group-hover:text-accent transition-colors">
+                        +965 92235280
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-light py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <p class="text-center text-gray-500 mb-12 max-w-xl mx-auto">Professional cleaning services tailored to your needs across Kuwait</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Home Cleaning</h3>
+                    <p class="text-gray-500 leading-relaxed">Complete residential cleaning services including deep cleaning, regular maintenance, and move-in/move-out cleaning.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Office Cleaning</h3>
+                    <p class="text-gray-500 leading-relaxed">Keep your workspace spotless with our professional office and commercial cleaning solutions.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Specialized Cleaning</h3>
+                    <p class="text-gray-500 leading-relaxed">Carpet cleaning, window washing, post-construction cleanup, and other specialized services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-white py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-center mb-4">Why Choose 711 Clean?</h2>
+            <p class="text-center text-gray-500 mb-12 max-w-xl mx-auto">Kuwait's trusted cleaning partner</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+                    <div class="text-gray-600 font-medium">Available</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-primary mb-2">100%</div>
+                    <div class="text-gray-600 font-medium">Satisfaction Guaranteed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-primary mb-2">Pro</div>
+                    <div class="text-gray-600 font-medium">Trained Staff</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-primary mb-2">Eco</div>
+                    <div class="text-gray-600 font-medium">Friendly Products</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="bg-dark text-white py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-white mb-4">Ready for a Spotless Space?</h2>
+            <p class="text-gray-400 mb-10 text-lg">Get in touch with us today. We serve all areas across Kuwait.</p>
+            <a href="tel:+96592235280" class="group inline-flex items-center gap-4 bg-accent hover:bg-emerald-400 transition-colors text-white font-bold text-xl sm:text-2xl px-10 py-5 rounded-full no-underline shadow-lg shadow-accent/20">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                +965 92235280
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="text-2xl font-bold text-primary">711</span>
+                <span class="text-xl font-semibold text-white">Clean</span>
+            </div>
+            <p class="text-sm mb-2">Professional Cleaning Services in Kuwait</p>
+            <p class="text-sm">&copy; {new Date().getFullYear()} 711 Clean. All rights reserved.</p>
+        </div>
+    </footer>
 </Layout>
